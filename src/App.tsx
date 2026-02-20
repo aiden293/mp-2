@@ -10,15 +10,12 @@ const ParentDiv = styled.div`
 `;
 
 function parseBreedFromUrl(url: string): { breed: string; subBreed: string } {
-  // Dog CEO URL 예시:
-  // https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg
-  // breeds/<breed-or-breed-subbreed>/...
   const marker = "/breeds/";
   const idx = url.indexOf(marker);
   if (idx === -1) return { breed: "unknown", subBreed: "" };
 
   const after = url.slice(idx + marker.length);
-  const folder = after.split("/")[0]; // "hound-afghan" or "pug"
+  const folder = after.split("/")[0]; 
   const parts = folder.split("-");
 
   if (parts.length >= 2) {
