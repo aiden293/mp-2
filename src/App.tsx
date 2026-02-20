@@ -1,3 +1,8 @@
+// File: App.tsx
+// Author: SangHyup Lee
+// Description: Parent component responsible for retrieving data from the Dog CEO API using React Hooks.
+
+
 import styled from "styled-components";
 import { useEffect, useState } from "react";
 import DogGallery from "./components/DogSet";

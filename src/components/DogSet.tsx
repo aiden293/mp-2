@@ -1,3 +1,7 @@
+// File: DogGallery.tsx
+// Author: SangHyup Lee
+// Description: Child component responsible for rendering dog data.
+
 import styled from "styled-components";
 import type { DogCard } from "../interfaces/Dog";
 
